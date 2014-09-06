@@ -1,0 +1,1530 @@
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 15:43:17 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/action/.gem/ruby/2.1.1/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (127.4ms)
+Completed 200 OK in 917ms (Views: 383.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (43.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (24.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateIdeas (20140906155030)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  CREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "string" varchar(255), "description" varchar(255), "text" varchar(255), "picture" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140906155030"]]
+  [1m[35m (20.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (6.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 16:07:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/action/.gem/ruby/2.1.1/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (35.7ms)
+Completed 200 OK in 289ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:08:06 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 6533ms (Views: 6529.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:08:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 16:08:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 16:08:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 16:08:14 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 16:08:14 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:08:14 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:08:14 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:08:14 +0000
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:10:01 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (821.6ms)
+  Rendered ideas/new.html.erb within layouts/application (1136.3ms)
+Completed 200 OK in 3413ms (Views: 3361.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:10:04 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (113.5ms)
+  Rendered ideas/new.html.erb within layouts/application (155.6ms)
+Completed 200 OK in 1392ms (Views: 1390.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 16:10:51 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/action/.gem/ruby/2.1.1/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (15.9ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:10:59 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 595ms (Views: 589.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 16:11:01 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:11:01 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:11:01 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 16:11:02 +0000
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:11:24 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (42.3ms)
+  Rendered ideas/new.html.erb within layouts/application (185.0ms)
+Completed 200 OK in 1568ms (Views: 1563.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:11:26 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (451.0ms)
+  Rendered ideas/new.html.erb within layouts/application (456.7ms)
+Completed 200 OK in 1255ms (Views: 1253.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:11:27 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (77.3ms)
+  Rendered ideas/new.html.erb within layouts/application (81.4ms)
+Completed 200 OK in 980ms (Views: 979.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:11:29 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (26.9ms)
+  Rendered ideas/new.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 514ms (Views: 512.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 190.216.222.2 at 2014-09-06 16:12:19 +0000
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjKVHtfP7c1MosKtIP0fDuvdltApi1nDd4W9QNIYdT0=", "idea"=>{"name"=>"Aprender rails ", "string"=>"", "description"=>"Aprendiendo rails girls en Quito", "text"=>"", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "ideas" ("created_at", "description", "name", "picture", "string", "text", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-06 16:12:19.720093"], ["description", "Aprendiendo rails girls en Quito"], ["name", "Aprender rails "], ["picture", ""], ["string", ""], ["text", ""], ["updated_at", "2014-09-06 16:12:19.720093"]]
+  [1m[35m (55.3ms)[0m  commit transaction
+Redirected to http://purple-missile-67-143788.sae1.nitrousbox.com/ideas/1
+Completed 302 Found in 398ms (ActiveRecord: 56.0ms)
+
+
+Started GET "/ideas/1" for 190.216.222.2 at 2014-09-06 16:12:20 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.4ms)[0m  [1mSELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered ideas/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 698ms (Views: 519.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:12:22 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:12:22 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 16:12:23 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:12:23 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:12:23 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 16:12:24 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:13:53 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas/1" for 190.216.222.2 at 2014-09-06 16:14:11 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered ideas/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 301ms (Views: 293.1ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveStringFromIdeas (20140906162218)
+  [1m[35m (1.6ms)[0m  begin transaction
+  [1m[36m (27.2ms)[0m  [1mCREATE TEMPORARY TABLE "aideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "string" varchar(255), "description" varchar(255), "text" varchar(255), "picture" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "ideas"
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "aideas" ("id","name","string","description","text","picture","created_at","updated_at") VALUES (1, 'Aprender rails ', '', 'Aprendiendo rails girls en Quito', '', '', '2014-09-06 16:12:19.720093', '2014-09-06 16:12:19.720093')[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "ideas"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "text" varchar(255), "picture" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aideas"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ideas" ("id","name","description","text","picture","created_at","updated_at") VALUES (1, 'Aprender rails ', 'Aprendiendo rails girls en Quito', '', '', '2014-09-06 16:12:19.720093', '2014-09-06 16:12:19.720093')[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "aideas"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "aideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "text" varchar(255), "picture" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ideas"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aideas" ("id","name","description","text","picture","created_at","updated_at") VALUES (1, 'Aprender rails ', 'Aprendiendo rails girls en Quito', '', '', '2014-09-06 16:12:19.720093', '2014-09-06 16:12:19.720093')[0m
+  [1m[35m (0.3ms)[0m  DROP TABLE "ideas"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "picture" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aideas"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ideas" ("id","name","description","picture","created_at","updated_at") VALUES (1, 'Aprender rails ', 'Aprendiendo rails girls en Quito', '', '2014-09-06 16:12:19.720093', '2014-09-06 16:12:19.720093')[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "aideas"
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140906162218"]]
+  [1m[35m (59.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 16:24:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (3.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/action/.gem/ruby/2.1.1/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (8.5ms)
+Completed 200 OK in 132ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:24:42 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (113.8ms)
+Completed 500 Internal Server Error in 134ms
+
+ActionView::Template::Error (undefined method `string' for #<Idea:0x007fa5a23ba458>):
+    16:     <% @ideas.each do |idea| %>
+    17:       <tr>
+    18:         <td><%= idea.name %></td>
+    19:         <td><%= idea.string %></td>
+    20:         <td><%= idea.description %></td>
+    21:         <td><%= idea.text %></td>
+    22:         <td><%= idea.picture %></td>
+  app/views/ideas/index.html.erb:19:in `block in _app_views_ideas_index_html_erb___488467973640207694_70174684119320'
+  app/views/ideas/index.html.erb:16:in `_app_views_ideas_index_html_erb___488467973640207694_70174684119320'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (123.1ms)
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 16:26:14 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/action/.gem/ruby/2.1.1/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:26:20 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 295ms (Views: 291.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 16:26:21 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:26:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 16:26:21 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 16:26:21 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:26:21 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 16:26:21 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:26:21 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:26:21 +0000
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:26:25 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (32.0ms)
+  Rendered ideas/new.html.erb within layouts/application (48.3ms)
+Completed 500 Internal Server Error in 52ms
+
+ActionView::Template::Error (undefined method `string' for #<Idea:0x007fa5a30ba680>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :string %><br>
+    20:     <%= f.text_field :string %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :description %><br>
+  app/views/ideas/_form.html.erb:20:in `block in _app_views_ideas__form_html_erb___67281150959117848_70174690818940'
+  app/views/ideas/_form.html.erb:1:in `_app_views_ideas__form_html_erb___67281150959117848_70174690818940'
+  app/views/ideas/new.html.erb:3:in `_app_views_ideas_new_html_erb___1180631287916645583_70174690886220'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.0ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:26:26 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (32.3ms)
+  Rendered ideas/new.html.erb within layouts/application (39.6ms)
+Completed 500 Internal Server Error in 54ms
+
+ActionView::Template::Error (undefined method `string' for #<Idea:0x007fa5a2279d28>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :string %><br>
+    20:     <%= f.text_field :string %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :description %><br>
+  app/views/ideas/_form.html.erb:20:in `block in _app_views_ideas__form_html_erb___67281150959117848_70174683268140'
+  app/views/ideas/_form.html.erb:1:in `_app_views_ideas__form_html_erb___67281150959117848_70174683268140'
+  app/views/ideas/new.html.erb:3:in `_app_views_ideas_new_html_erb___1180631287916645583_70174683353900'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (108.0ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:27:10 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (53.1ms)
+  Rendered ideas/new.html.erb within layouts/application (93.2ms)
+Completed 200 OK in 904ms (Views: 903.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 16:27:12 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:27:12 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 16:27:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 16:27:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 16:27:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:27:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:27:13 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:27:13 +0000
+
+
+Started POST "/ideas" for 190.216.222.2 at 2014-09-06 16:27:27 +0000
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjKVHtfP7c1MosKtIP0fDuvdltApi1nDd4W9QNIYdT0=", "idea"=>{"name"=>"arreglando", "description"=>"los problemitas", "picture"=>""}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "ideas" ("created_at", "description", "name", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-09-06 16:27:27.572014"], ["description", "los problemitas"], ["name", "arreglando"], ["picture", ""], ["updated_at", "2014-09-06 16:27:27.572014"]]
+  [1m[35m (46.6ms)[0m  commit transaction
+Redirected to http://purple-missile-67-143788.sae1.nitrousbox.com/ideas/2
+Completed 302 Found in 133ms (ActiveRecord: 47.9ms)
+
+
+Started GET "/ideas/2" for 190.216.222.2 at 2014-09-06 16:27:27 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIdea Load (1.8ms)[0m  [1mSELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered ideas/show.html.erb within layouts/application (28.5ms)
+Completed 500 Internal Server Error in 97ms
+
+ActionView::Template::Error (undefined method `string' for #<Idea:0x007fa5a34bc198>):
+     7: 
+     8: <p>
+     9:   <strong>String:</strong>
+    10:   <%= @idea.string %>
+    11: </p>
+    12: 
+    13: <p>
+  app/views/ideas/show.html.erb:10:in `_app_views_ideas_show_html_erb___2637163374969409319_70174692970700'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (57.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (41.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (250.0ms)
+
+
+Started GET "/ideas/2" for 190.216.222.2 at 2014-09-06 16:28:01 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mIdea Load (0.7ms)[0m  SELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered ideas/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 263ms (Views: 251.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 16:28:02 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:28:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:28:03 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:28:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:28:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 16:28:03 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 16:28:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 16:28:03 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:28:09 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 563ms (Views: 551.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:37:09 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (202.7ms)
+Completed 200 OK in 3237ms (Views: 2974.9ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:37:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 16:37:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 16:37:17 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:37:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 16:37:18 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:37:19 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 16:37:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:37:20 +0000
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:37:28 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (96.5ms)
+  Rendered ideas/new.html.erb within layouts/application (137.0ms)
+Completed 200 OK in 369ms (Views: 359.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 16:39:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (296.5ms)
+  Rendered ideas/new.html.erb within layouts/application (376.1ms)
+Completed 200 OK in 2388ms (Views: 1997.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:39:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 16:39:18 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:39:18 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 16:39:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 16:39:18 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:39:18 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 16:39:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:39:19 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:39:38 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (29.0ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (112.1ms)
+Completed 200 OK in 2184ms (Views: 2153.9ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:40:55 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.7ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (131.3ms)
+Completed 200 OK in 1213ms (Views: 1094.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:40:59 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 16:40:59 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:40:59 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:41:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 16:41:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 16:41:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 16:41:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:41:00 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:41:05 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 672ms (Views: 671.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:41:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:41:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:41:07 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:41:07 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:42:49 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (3.8ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (126.0ms)
+Completed 200 OK in 1267ms (Views: 1085.3ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:42:52 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:42:53 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 16:42:53 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 16:42:53 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 16:42:53 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:42:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 16:42:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:42:54 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 16:45:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (2.4ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 652ms (Views: 602.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 16:45:39 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 16:45:39 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 16:45:39 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 16:45:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 16:45:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 16:45:40 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 16:45:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 16:45:40 +0000
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 17:12:31 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (14219.5ms)
+  Rendered ideas/new.html.erb within layouts/application (25992.2ms)
+Completed 200 OK in 52066ms (Views: 33263.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 17:14:13 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (232.5ms)
+  Rendered ideas/new.html.erb within layouts/application (292.4ms)
+Completed 200 OK in 24031ms (Views: 23863.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 17:14:38 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (63.6ms)
+  Rendered ideas/new.html.erb within layouts/application (95.7ms)
+Completed 200 OK in 965ms (Views: 963.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 17:14:39 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (57.1ms)
+  Rendered ideas/new.html.erb within layouts/application (74.3ms)
+Completed 200 OK in 1018ms (Views: 1013.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 17:14:40 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (35.7ms)
+  Rendered ideas/new.html.erb within layouts/application (94.2ms)
+Completed 200 OK in 870ms (Views: 868.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 17:14:41 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (19.6ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (92.4ms)
+Completed 200 OK in 879ms (Views: 844.3ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 17:14:42 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (56.1ms)
+  Rendered ideas/new.html.erb within layouts/application (137.8ms)
+Completed 200 OK in 979ms (Views: 951.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 17:29:54 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/action/.gem/ruby/2.1.1/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (20.9ms)
+Completed 200 OK in 309ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 17:31:17 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (836.8ms)
+Completed 200 OK in 5401ms (Views: 5094.4ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 17:31:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 17:31:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 17:31:24 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 17:31:25 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 17:31:25 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 17:31:25 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 17:31:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 17:31:26 +0000
+
+
+Started GET "/ideas/new" for 190.216.222.2 at 2014-09-06 17:31:32 +0000
+Processing by IdeasController#new as HTML
+  Rendered ideas/_form.html.erb (53.7ms)
+  Rendered ideas/new.html.erb within layouts/application (59.4ms)
+Completed 200 OK in 121ms (Views: 119.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/ideas" for 190.216.222.2 at 2014-09-06 17:32:25 +0000
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjKVHtfP7c1MosKtIP0fDuvdltApi1nDd4W9QNIYdT0=", "idea"=>{"name"=>"Ruby ruby", "description"=>"Interesante la información ", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f0a7bbf3218 @tempfile=#<Tempfile:/tmp/RackMultipart20140906-1237-6lurqm>, @original_filename="rubylang.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"idea[picture]\"; filename=\"rubylang.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Idea"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (12.6ms)[0m  INSERT INTO "ideas" ("created_at", "description", "name", "picture", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-09-06 17:32:25.609908"], ["description", "Interesante la información "], ["name", "Ruby ruby"], ["picture", "rubylang.png"], ["updated_at", "2014-09-06 17:32:25.609908"]]
+  [1m[36m (32.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://purple-missile-67-143788.sae1.nitrousbox.com/ideas/3
+Completed 302 Found in 158ms (ActiveRecord: 45.0ms)
+
+
+Started GET "/ideas/3" for 190.216.222.2 at 2014-09-06 17:32:25 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mIdea Load (0.3ms)[0m  SELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered ideas/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 100ms (Views: 94.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 17:32:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 17:32:26 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 17:32:27 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 17:32:27 +0000
+
+
+Started GET "/ideas/3" for 190.216.222.2 at 2014-09-06 17:39:25 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mIdea Load (8.6ms)[0m  SELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered ideas/show.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 837ms (Views: 728.7ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 17:39:28 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 17:39:29 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 17:39:29 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 17:39:29 +0000
+
+
+Started GET "/ideas/3" for 190.216.222.2 at 2014-09-06 17:41:02 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered ideas/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 130ms (Views: 125.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 17:41:03 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 17:41:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 17:41:04 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 17:41:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 17:41:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 17:41:04 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 17:41:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 17:41:04 +0000
+
+
+Started GET "/ideas/3" for 190.216.222.2 at 2014-09-06 17:55:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mIdea Load (0.2ms)[0m  SELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered ideas/show.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 865ms (Views: 769.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 17:55:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 17:55:29 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 17:55:29 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 17:55:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 17:55:30 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 17:55:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 17:55:30 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 17:55:30 +0000
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 19:10:51 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/action/.gem/ruby/2.1.1/gems/railties-4.1.0/lib/rails/templates/rails/welcome/index.html.erb (98.1ms)
+Completed 200 OK in 3661ms (Views: 1471.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 19:11:32 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (66.4ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (768.3ms)
+Completed 200 OK in 14558ms (Views: 12580.9ms | ActiveRecord: 97.5ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 19:11:51 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 19:11:51 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 19:11:52 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 19:11:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 19:11:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 19:11:56 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 19:11:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 19:11:59 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 19:12:12 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (65.6ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (286.4ms)
+Completed 200 OK in 3678ms (Views: 3425.1ms | ActiveRecord: 65.6ms)
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 19:30:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.0) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.0) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (35.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (932.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20140906192652)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (19.7ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_name" varchar(255), "body" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140906192652"]]
+  [1m[36m (53.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 19:39:07 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 19:39:13 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (367.4ms)
+Completed 200 OK in 11173ms (Views: 10387.6ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 19:39:27 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 19:39:27 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 19:39:28 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 19:39:28 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 19:39:29 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 19:39:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 19:39:30 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 19:39:30 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 19:39:30 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 19:39:30 +0000
+
+
+Started GET "/comments" for 190.216.222.2 at 2014-09-06 19:39:50 +0000
+
+ActionController::RoutingError (No route matches [GET] "/comments"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (89.4ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (185.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (537.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (2021.2ms)
+
+
+Started GET "/coments" for 190.216.222.2 at 2014-09-06 19:39:56 +0000
+
+ActionController::RoutingError (No route matches [GET] "/coments"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (29.2ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (74.6ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (118.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (912.7ms)
+
+
+Started GET "/comments" for 190.216.222.2 at 2014-09-06 19:41:18 +0000
+
+ActionController::RoutingError (No route matches [GET] "/comments"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (82.5ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (66.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1002.0ms)
+
+
+Started GET "/comment" for 190.216.222.2 at 2014-09-06 19:41:33 +0000
+
+ActionController::RoutingError (No route matches [GET] "/comment"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.7ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (410.1ms)
+
+
+Started GET "/comments" for 190.216.222.2 at 2014-09-06 19:42:17 +0000
+
+ActionController::RoutingError (No route matches [GET] "/comments"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/action/.parts/packages/ruby2.1/2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.3ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (70.9ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (106.0ms)
+  Rendered /home/action/.gem/ruby/2.1.1/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (674.1ms)
+
+
+Started GET "/comments" for 190.216.222.2 at 2014-09-06 19:46:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (97.6ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (129.8ms)
+Completed 200 OK in 1697ms (Views: 1332.6ms | ActiveRecord: 97.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 19:46:40 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 19:46:41 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 19:46:41 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 19:46:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 19:46:42 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 19:46:42 +0000
+
+
+Started GET "/comments" for 190.216.222.2 at 2014-09-06 19:53:19 +0000
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 1393ms (Views: 1375.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 19:53:21 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 19:53:21 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 19:53:22 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 19:53:22 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 19:53:22 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 19:53:22 +0000
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 20:00:07 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/comments" for 190.216.222.2 at 2014-09-06 20:00:12 +0000
+Processing by CommentsController#index as HTML
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (128.3ms)
+Completed 200 OK in 3645ms (Views: 2874.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 20:00:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 20:00:18 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 20:00:18 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 20:00:18 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 20:00:18 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 20:00:19 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 20:00:37 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (554.3ms)
+Completed 200 OK in 4966ms (Views: 4503.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 20:00:43 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 20:00:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 20:00:44 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 20:00:45 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 20:00:45 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 20:00:45 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 20:01:07 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (822.8ms)
+Completed 200 OK in 5248ms (Views: 5246.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 20:01:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 20:01:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 20:01:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 20:01:17 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 20:01:18 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 20:01:18 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 20:01:19 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 20:01:19 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 20:01:20 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 20:01:20 +0000
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 20:03:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 20:03:29 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (7.7ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (298.8ms)
+Completed 200 OK in 4302ms (Views: 3053.3ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 20:03:35 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 20:03:35 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 20:03:35 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 20:03:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 20:03:36 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 20:03:37 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 20:03:51 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (5.1ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 1068ms (Views: 1054.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 20:03:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 20:03:53 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 20:03:53 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 20:03:53 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 20:03:53 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 20:03:53 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 20:05:35 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (1.7ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (91.9ms)
+Completed 200 OK in 610ms (Views: 570.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 20:05:36 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:37 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:37 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 20:05:38 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:38 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:38 +0000
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 20:05:38 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 20:05:38 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:38 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 20:05:45 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 1218ms (Views: 1216.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 20:05:46 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 20:05:47 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:47 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 190.216.222.2 at 2014-09-06 20:05:47 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:47 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 20:05:47 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:47 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:47 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 20:05:48 +0000
+
+
+Started GET "/ideas/2" for 190.216.222.2 at 2014-09-06 20:05:52 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mIdea Load (37.7ms)[0m  SELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."idea_id" = ?[0m  [["idea_id", 2]]
+  Rendered comments/_form.html.erb (276.9ms)
+  Rendered ideas/show.html.erb within layouts/application (441.6ms)
+Completed 200 OK in 1696ms (Views: 1254.5ms | ActiveRecord: 38.5ms)
+
+
+Started GET "/ideas/2" for 190.216.222.2 at 2014-09-06 20:05:54 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mIdea Load (10.8ms)[0m  SELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."idea_id" = ?[0m  [["idea_id", 2]]
+  Rendered comments/_form.html.erb (36.4ms)
+  Rendered ideas/show.html.erb within layouts/application (81.8ms)
+Completed 200 OK in 1106ms (Views: 1060.5ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/ideas/2" for 190.216.222.2 at 2014-09-06 20:05:55 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mIdea Load (0.2ms)[0m  SELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."idea_id" = ?[0m  [["idea_id", 2]]
+  Rendered comments/_form.html.erb (26.9ms)
+  Rendered ideas/show.html.erb within layouts/application (78.9ms)
+Completed 200 OK in 891ms (Views: 860.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 20:06:11 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 481ms (Views: 480.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas/3" for 190.216.222.2 at 2014-09-06 20:06:18 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."idea_id" = ?  [["idea_id", 3]]
+  Rendered comments/_form.html.erb (367.5ms)
+  Rendered ideas/show.html.erb within layouts/application (524.4ms)
+Completed 200 OK in 1488ms (Views: 1283.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/comments" for 190.216.222.2 at 2014-09-06 20:06:33 +0000
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjKVHtfP7c1MosKtIP0fDuvdltApi1nDd4W9QNIYdT0=", "comment"=>{"user_name"=>"probando", "body"=>"probando si funcionan comentarios ", "idea_id"=>"3"}, "commit"=>"Create Comment"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "comments" ("body", "created_at", "idea_id", "updated_at", "user_name") VALUES (?, ?, ?, ?, ?)  [["body", "probando si funcionan comentarios "], ["created_at", "2014-09-06 20:06:33.622346"], ["idea_id", 3], ["updated_at", "2014-09-06 20:06:33.622346"], ["user_name", "probando"]]
+  [1m[36m (36.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://purple-missile-67-143788.sae1.nitrousbox.com/comments/1
+Completed 302 Found in 168ms (ActiveRecord: 37.3ms)
+
+
+Started GET "/comments/1" for 190.216.222.2 at 2014-09-06 20:06:34 +0000
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mComment Load (0.3ms)[0m  SELECT  "comments".* FROM "comments"  WHERE "comments"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered comments/show.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 566ms (Views: 557.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/comments.css?body=1" for 190.216.222.2 at 2014-09-06 20:06:35 +0000
+
+
+Started GET "/assets/ideas.css?body=1" for 190.216.222.2 at 2014-09-06 20:06:35 +0000
+
+
+Started GET "/assets/comments.js?body=1" for 190.216.222.2 at 2014-09-06 20:06:36 +0000
+
+
+Started GET "/assets/application.css?body=1" for 190.216.222.2 at 2014-09-06 20:06:36 +0000
+
+
+Started GET "/assets/application.js?body=1" for 190.216.222.2 at 2014-09-06 20:06:36 +0000
+
+
+Started GET "/assets/ideas.js?body=1" for 190.216.222.2 at 2014-09-06 20:06:36 +0000
+
+
+Started GET "/comments" for 190.216.222.2 at 2014-09-06 20:06:40 +0000
+Processing by CommentsController#index as HTML
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 1593ms (Views: 1584.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 190.216.222.2 at 2014-09-06 20:06:46 +0000
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 20:06:46 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 1068ms (Views: 1066.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 20:06:48 +0000
+Processing by IdeasController#index as HTML
+  [1m[36mIdea Load (26.0ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (61.5ms)
+Completed 200 OK in 1063ms (Views: 1035.9ms | ActiveRecord: 26.0ms)
+
+
+Started GET "/ideas/3" for 190.216.222.2 at 2014-09-06 20:06:53 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mIdea Load (0.2ms)[0m  SELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."idea_id" = ?[0m  [["idea_id", 3]]
+  Rendered comments/_form.html.erb (30.5ms)
+  Rendered ideas/show.html.erb within layouts/application (201.3ms)
+Completed 200 OK in 1366ms (Views: 1239.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 190.216.222.2 at 2014-09-06 20:32:57 +0000
+Processing by IdeasController#index as HTML
+  [1m[35mIdea Load (187.1ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (1101.0ms)
+Completed 200 OK in 5278ms (Views: 4698.6ms | ActiveRecord: 187.1ms)
+
+
+Started GET "/ideas/1" for 190.216.222.2 at 2014-09-06 20:34:00 +0000
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT  "ideas".* FROM "ideas"  WHERE "ideas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."idea_id" = ?  [["idea_id", 1]]
+  Rendered comments/_form.html.erb (148.1ms)
+  Rendered ideas/show.html.erb within layouts/application (182.6ms)
+Completed 200 OK in 1165ms (Views: 1005.4ms | ActiveRecord: 0.5ms)
